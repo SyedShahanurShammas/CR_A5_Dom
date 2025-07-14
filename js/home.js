@@ -5,7 +5,7 @@ document.getElementById('btn-nowakhali-donate').addEventListener('click', (event
     let addTaka = getInputValueById('input-nowakhali-donation');
     //check
     if (isNaN(addTaka)) {
-        alert('Please Enter Amount! You have written alphabet!')
+        alert('Please Enter Amount! You have mistaken something!')
         return;
     }
     if (addTaka >= 0) {
@@ -18,10 +18,15 @@ document.getElementById('btn-nowakhali-donate').addEventListener('click', (event
         setTheMoney('ExistingTaka-nowakhali', exisTingTaka)
         // set the money into my current amount
         setTheMoney('my-current-amount', myAmount)
+        // Add to history
+        historyOfDonation('This Donation is for Flood. Noakhali, Bangladesh', addTaka);
+
     }
     else {
         alert('Negative number is not valid')
     }
+    // congratulations alert
+    alert(`Congratulations! You have Done ${addTaka} Taka Donation`)
 })
 // feni section
 document.getElementById('btn-input-Donate-feni').addEventListener('click', (event) => {
@@ -43,10 +48,14 @@ document.getElementById('btn-input-Donate-feni').addEventListener('click', (even
         setTheMoney('existing-money-InFeni', exisTingTaka)
         // set the money into my current amount
         setTheMoney('my-current-amount', myAmount)
+        // Add to history
+        historyOfDonation('This Donation is for Flood Relief in Feni,Bangladesh', addTaka);
     }
     else {
         alert('Negative number is not valid')
     }
+    // congratulations alert
+    alert(`Congratulations! You have Done ${addTaka} Taka Donation`)
 })
 // Quota movement
 document.getElementById('btn-quota-movement').addEventListener('click', (event) => {
@@ -67,6 +76,24 @@ document.getElementById('btn-quota-movement').addEventListener('click', (event) 
         setTheMoney('exisTing-amount-quotaMovement', exisTingTaka)
         // set the money into my current amount
         setTheMoney('my-current-amount', myAmount)
-    }
+        // Add to history
+        historyOfDonation('This Donation is Going to Aid for Injured in the Quota Movement', addTaka);
 
+    }
+    else {
+        alert('Negative number is not valid')
+    }
+    // congratulations alert
+    alert(`Congratulations! You have Done ${addTaka} Taka Donation`)
+
+})
+
+//showing btns
+
+document.getElementById('btn-show-cards').addEventListener('click', () => {
+    showingBtn('cards-section')
+})
+
+document.getElementById('btn-showing-history').addEventListener('click', () => {
+    showingBtn('history-section')
 })
