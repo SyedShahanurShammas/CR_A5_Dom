@@ -44,13 +44,14 @@ function historyOfDonation(text, tk) {
         `
     document.getElementById('history-section').appendChild(div)
 }
-// showing 
+// showing sections
 function showingBtn(id) {
     document.getElementById('cards-section').classList.add('hidden')
     document.getElementById('history-section').classList.add('hidden')
 
     document.getElementById(id).classList.remove('hidden')
 }
+// btn bg
 function clickedBtn(id) {
     document.getElementById('btn-show-cards').classList.remove('bg-lime-300')
     document.getElementById('btn-showing-history').classList.remove('bg-lime-300')

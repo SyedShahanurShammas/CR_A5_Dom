@@ -119,15 +119,3 @@ document.getElementById('btn-showing-history').addEventListener('click', () => {
 })
 
 
-// Divide Time with a year
-// const di = new Date();
-// let day = di.getDate();
-// let month = di.getMonth() + 1;
-// let year = di.getFullYear()
-// let hours = di.getHours();
-// let min = di.getMinutes();
-// let meridiem = hours >= 12 ? 'PM' : 'AM'; // Determine AM/PM
-
-// const time = `${hours}:${min} ${meridiem}`
-// const date = `${day}/${month}/${year}`
-// console.log(time)

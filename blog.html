@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="overflow-hidden">
     <header class="sticky  top-0 z-10">
         <!-- navbar -->
         <div class="navbar bg-[#F9F7F3] lg:py-6 flex backdrop-blur-md lg:px-24 shadow-sm">
@@ -44,23 +44,37 @@
 
         <div class="collapse collapse-arrow bg-base-100 border border-base-300">
             <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title font-semibold">How do I create an account?</div>
-            <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the
-                registration process.</div>
+            <div class="collapse-title text-2xl font-semibold">What is Document Objects Model(DOM)</div>
+            <div class="collapse-content text-xl">The Document Object Model (DOM) is a programming interface for HTML
+                and XML documents. It represents the structure of a document as a tree-like structure of nodes, allowing
+                programming languages like JavaScript to dynamically access and manipulate the document's content,
+                structure, and style. In essence,</div>
         </div>
         <div class="collapse collapse-arrow bg-base-100 border border-base-300">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
-            <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the
-                instructions sent to your email.</div>
+            <div class="collapse-title text-2xl font-semibold">How do you select an element from the Dom?</div>
+            <div class="collapse-content text-xl">The initial step is to choose, or locate the correct element within
+                the DOM. Similar to how you select text in a word processor for editing, this selection can be
+                accomplished through different methods, such as . getElementById() and . querySelector()</div>
         </div>
         <div class="collapse collapse-arrow bg-base-100 border border-base-300">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title font-semibold">How do I update my profile information?</div>
-            <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.
-            </div>
+            <div class="collapse-title text-2xl font-semibold">what is event delegation in the context of the DOM,and
+                why is it useful?</div>
+            <div class="collapse-content text-xl">Event delegation is a technique in JavaScript where a single event
+                listener is attached to a parent element instead of multiple listeners to its child elements. This works
+                because events "bubble up" from the target element to its ancestors in the DOM. It's useful for handling
+                events on dynamically added elements and can improve performance by reducing the number of event
+                listeners</div>
         </div>
-
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-2xl font-semibold">How do you manipulate an element's attributes and style
+                using the DOM?</div>
+            <div class="collapse-content text-xl">You can easily get, set, or remove the attributes of an HTML element
+                using the following methods: getAttribute(): Retrieves the value of an attribute. setAttribute(): Sets a
+                new value for an attribute. removeAttribute(): Removes an attribute.</div>
+        </div>
 
     </main>
 
