@@ -104,7 +104,6 @@ document.getElementById('btn-quota-movement').addEventListener('click', (event) 
         alert('Negative number is not valid')
     }
 
-
 })
 
 //showing btns

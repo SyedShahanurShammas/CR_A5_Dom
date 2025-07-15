@@ -142,13 +142,17 @@
 
         <!-- Open the modal using ID.showModal() method -->
         <dialog id="my_modal_1" class="modal">
-            <div class="modal-box">
-                <h3 class="text-lg font-bold">congrates!</h3>
-                <p class="py-4">Press ESC key or click the button below to close</p>
+            <div class="modal-box flex flex-col items-center justify-center">
+                <h3 class="text-4xl  font-extrabold">Congratulations!</h3>
+                <figure class="mt-7">
+                    <img class="h-10 w-10" src="./assets/coin.png" alt="">
+                </figure>
+                <p class="py-4 text-gray-400 text-2xl">You Have Donated for Humankind</p>
+                <h3 class="text-3xl text-center  font-bold">Successfully</h3>
                 <div class="modal-action">
                     <form method="dialog">
                         <!-- if there is a button in form, it will close the modal -->
-                        <button class="btn">Close</button>
+                        <button class="btn">Close Confirmation</button>
                     </form>
                 </div>
             </div>
