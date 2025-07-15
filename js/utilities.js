@@ -13,7 +13,7 @@ function getExistingValueFromText(text) {
 function setTheMoney(id, money) {
     document.getElementById(id).innerText = money;
 }
-
+// history
 function historyOfDonation(text, tk) {
 
     const d = new Date();
@@ -30,9 +30,9 @@ function historyOfDonation(text, tk) {
 
     const div = document.createElement('div');
     div.innerHTML = `
-          <div class="py-5 px-12 bg-slate-100 rounded-lg sm:mx-3 my-4">
-                <div class="flex justify-between">
-                <h1 class="text-2xl font-bold">${text}</h1>
+          <div class=" xl:px-7 xl:py-5 py-3 px-5 bg-slate-100 rounded-lg mx-3 my-2">
+                <div class=" lg:flex justify-between">
+                <h1 class="lg:text-2xl font-bold">${text}</h1>
                 <h3 class="text-xl" id="demo">
                  Time:<span class="font-semibold text-xl"> ${time} ${date}</span>
                   </h3> 
