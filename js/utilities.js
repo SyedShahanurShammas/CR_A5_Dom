@@ -56,6 +56,4 @@ function clickedBtn(id) {
     document.getElementById('btn-showing-history').classList.remove('bg-lime-300')
 
     document.getElementById(id).classList.add('bg-lime-300')
-
-
 }

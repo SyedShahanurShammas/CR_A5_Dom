@@ -10,6 +10,11 @@ document.getElementById('btn-nowakhali-donate').addEventListener('click', (event
     }
     if (addTaka >= 0) {
         let myAmount = getExistingValueFromText('my-current-amount');
+        if (addTaka > myAmount) {
+            alert("You Don't have sufficient Balance")
+            return;
+        }
+        // minus from current amount
         myAmount -= addTaka;
 
         let exisTingTaka = getExistingValueFromText('ExistingTaka-nowakhali')
@@ -20,13 +25,13 @@ document.getElementById('btn-nowakhali-donate').addEventListener('click', (event
         setTheMoney('my-current-amount', myAmount)
         // Add to history
         historyOfDonation('This Donation is for Flood. Noakhali, Bangladesh', addTaka);
-
+        // congratulation modals
+        document.getElementById('my_modal_1').showModal()
     }
     else {
-        alert('Negative number is not valid')
+        alert('Negative number is invalid')
     }
-    // congratulations alert
-    alert(`Congratulations! You have Done ${addTaka} Taka Donation`)
+
 })
 // feni section
 document.getElementById('btn-input-Donate-feni').addEventListener('click', (event) => {
@@ -34,11 +39,16 @@ document.getElementById('btn-input-Donate-feni').addEventListener('click', (even
     let addTaka = getInputValueById('input-value-fromFeni');
     //check
     if (isNaN(addTaka)) {
-        alert('Please Enter Amount! You have written alphabet!')
+        alert('Please Enter Amount! You have mistaken something!')
         return;
     }
     if (addTaka >= 0) {
         let myAmount = getExistingValueFromText('my-current-amount');
+        if (addTaka > myAmount) {
+            alert("You Don't have sufficient Balance")
+            return;
+        }
+        // minus from current amount
         myAmount -= addTaka;
 
         let exisTingTaka = getExistingValueFromText('existing-money-InFeni');
@@ -50,12 +60,14 @@ document.getElementById('btn-input-Donate-feni').addEventListener('click', (even
         setTheMoney('my-current-amount', myAmount)
         // Add to history
         historyOfDonation('This Donation is for Flood Relief in Feni,Bangladesh', addTaka);
+
+        // congratulation modals
+        document.getElementById('my_modal_1').showModal()
     }
     else {
         alert('Negative number is not valid')
     }
-    // congratulations alert
-    alert(`Congratulations! You have Done ${addTaka} Taka Donation`)
+
 })
 // Quota movement
 document.getElementById('btn-quota-movement').addEventListener('click', (event) => {
@@ -63,11 +75,16 @@ document.getElementById('btn-quota-movement').addEventListener('click', (event) 
     let addTaka = getInputValueById('input-quota-movement');
     //check
     if (isNaN(addTaka)) {
-        alert('Please Enter Amount! You have written alphabet!')
+        alert('Please Enter Amount! You have mistaken something!')
         return;
     }
     if (addTaka >= 0) {
         let myAmount = getExistingValueFromText('my-current-amount');
+        if (addTaka > myAmount) {
+            alert("You Don't have sufficient Balance")
+            return;
+        }
+        // minus from current amount
         myAmount -= addTaka;
 
         let exisTingTaka = getExistingValueFromText('exisTing-amount-quotaMovement');
@@ -79,12 +96,14 @@ document.getElementById('btn-quota-movement').addEventListener('click', (event) 
         // Add to history
         historyOfDonation('This Donation is Going to Aid for Injured in the Quota Movement', addTaka);
 
+        // congratulation modals
+        document.getElementById('my_modal_1').showModal()
+
     }
     else {
         alert('Negative number is not valid')
     }
-    // congratulations alert
-    alert(`Congratulations! You have Done ${addTaka} Taka Donation`)
+
 
 })
 
